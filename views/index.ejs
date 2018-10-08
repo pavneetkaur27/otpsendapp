@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body style="padding: 0" >
+
+  <nav class="navbar navbar-default headbar" style="background-color: #d9b049" >
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#my-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand header-style" href="#" style="color: white; ">
+          <b>Sample App</b>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="my-collapse">
+        <ul class="nav navbar-nav">
+          <li class="mychoice current"><a href="/" style="color: white;"><span class="fa fa-home"></span></a></li>
+          <li class="mychoice "><a href="/userlist" style="color: white;"><b>Contact List</b></a></li>
+          <li class="mychoice"><a style="color: white;" href="/sentmessages"><b>Sent Messages</b></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container middle_body" style="width: 100%" >
+    <center>
+      <h4 class="body-title" >This is an sample app for sending the otp to different contacts (Made for Kisan Hiring coding challenge)</h4>
+    </center>
+  </div>
+  <% if(sent){%>
+  <script>
+    $(function () {
+        alert("Otp Sent!");
+    })
+  </script>
+  <%}%>
+  </body>
+</html>

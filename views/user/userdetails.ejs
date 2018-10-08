@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .card-pricing.popular {
+        z-index: 1;
+        border: 3px solid #cca447;
+
+        border-radius: 3px;
+        box-shadow: inset 0 -5px 45px #cca447, 0 1px 1px rgba(255,255,255,0.2);
+        -webkit-transition: box-shadow .5s ease;
+        -moz-transition: box-shadow .5s ease;
+        -o-transition: box-shadow .5s ease;
+        -ms-transition: box-shadow .5s ease;
+        transition: box-shadow .5s ease;
+    }
+    .card-pricing .list-unstyled li {
+        padding: .5rem 0;
+        color: #6c757d;
+    }
+</style>
+<body style="padding: 0" >
+
+<nav class="navbar navbar-default headbar" style="background-color: #d9b049" >
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#my-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand header-style" href="#" style="color: white; ">
+                <b>Sample App</b>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="my-collapse">
+            <ul class="nav navbar-nav">
+                <li class="mychoice"><a href="/" style="color: white;"><span class="fa fa-home"></span></a></li>
+                <li class="mychoice "><a href="/userlist" style="color: white;"><b>Contact List</b></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class=" panel panel-warning" style="width: 75%;margin-left:15%;margin-top: 50px; font: 15px arial, sans-serif;font-weight: bold;background-color: #4d5f7a ">
+    <div class="panel-heading">User Details</div>
+
+</div>
+<div class="content card-deck ">
+    <div class="card card-pricing popular shadow text-center px-3 mb-4">
+        <div class="bg-transparent card-header pt-4 border-0">
+            <h1 class="h2 font-weight-normal text-primary text-center mb-0" style="font-family: Georgia" ><%= user.Firstname+" "+user.Lastname%></h1>
+        </div>
+        <div class="card-body pt-0">
+            <center>
+            <div class="panel panel-warning panel_style" >
+                <div class="panel-heading"  style="font:14px Georgia ;"><strong>Contact No:</strong></div>
+                <div class="panel-body panel_body_style" style=";color: #0089d1"><b><%= user.ContactNo%></b></div>
+            </div>
+            </center>
+            <a href="/composemessage" class="btn btn-warning " style="margin: 20px;font:18px Georgia white;">Generate OTP</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

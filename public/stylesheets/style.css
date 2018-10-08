@@ -1,0 +1,73 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.current{
+  background-color: #cca447;
+}
+
+
+.middle_body{
+
+  background-color: #cca447;
+  color: aliceblue;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: Arial;
+
+}
+
+
+.mychoice:hover{
+  opacity:0.5;
+}
+
+
+
+.content{
+  width: 50%;
+  margin-left: 25%;
+margin-top: 50px;
+
+}
+
+@media (max-width: 500px) {
+  .content{
+    width: 80%;
+    margin-left: 50px;
+  }
+}
+
+.panel_style{
+  width: 50%;text-align: left;margin-left: 50px;
+}
+
+.panel_body_style{
+  margin-left: 50px;
+}
+
+.form_style{
+  margin-left: 20px;margin-top: 20px;padding: 20px;
+}
+@media (max-width: 500px) {
+.panel_style{
+  width: 70%;
+  text-align: left;
+  margin-left: 20px;
+}
+  .panel_body_style{
+    margin-left: 20px;
+  }
+
+  .form_style{
+    margin-left: 10px;margin-top: 20px;padding: 20px;
+  }
+}
+
