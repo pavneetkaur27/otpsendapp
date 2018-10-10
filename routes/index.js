@@ -69,7 +69,7 @@ router.post('/composemessage',function (req,res) {
                     user.send(err);
                 } else {
                     nexmo.message.sendSms(
-                        'Virtual', user.ContactNo, req.body.msg, //instead of user.contact name only registered test numbers on nexmo will get sms like 918168226727
+                        'Virtual',user.ContactNo, req.body.msg, //instead of user.contact name only registered test numbers on nexmo will get sms like 918168226727
                         {type: 'unicode'},
                         function (err, responseData) {
                             if (err) {
